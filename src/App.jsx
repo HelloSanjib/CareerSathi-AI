@@ -13,6 +13,9 @@ import { GoogleOAuthProvider } from '@react-oauth/google';
 
 export const ServerUrl = import.meta.env.VITE_BACKEND_URL || "http://localhost:8000"
 
+console.log("Diagnostic: VITE_BACKEND_URL =", import.meta.env.VITE_BACKEND_URL);
+console.log("Diagnostic: ServerUrl =", ServerUrl);
+
 export const ThemeContext = createContext();
 
 function App() {
