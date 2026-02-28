@@ -77,8 +77,9 @@ function Pricing() {
         key: import.meta.env.VITE_RAZORPAY_KEY_ID,
         amount: result.data.amount,
         currency: "INR",
-        name: "InterviewIQ.AI",
+        name: "CareerSathi AI",
         description: `${plan.name} - ${plan.credits} Credits`,
+        image: "https://ui-avatars.com/api/?name=C&background=10b981&color=fff&size=200&rounded=true&bold=true",
         order_id: result.data.id,
 
         handler: async function (response) {
