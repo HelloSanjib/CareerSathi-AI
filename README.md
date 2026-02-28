@@ -1,16 +1,54 @@
-# React + Vite
+# 🤖 CareerSathi AI - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
 
-Currently, two official plugins are available:
+The frontend application for **CareerSathi AI**, a smart AI-powered platform for practicing interviews. It offers role-based mock interviews with smart follow-ups, adaptive difficulty, and real-time performance evaluation.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
+- **AI-Powered Mock Interviews:** Dynamic questions based on user roles and experience.
+- **Real-Time Evaluation:** Instant feedback on interview performance.
+- **Modern UI/UX:** Fully responsive design powered by Tailwind CSS and Framer Motion.
+- **Dark Mode Support:** Integrated light and dark themes.
+- **Google Authentication:** Secure login using `@react-oauth/google`.
+- **Interactive Dashboards:** Visualized performance metrics using `recharts`.
+- **PDF Reports:** Downloadable interview history and feedback using `jspdf`.
 
-## React Compiler
+## 🚀 Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
 
-## Expanding the ESLint configuration
+### Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Navigate to the client directory:
+   ```bash
+   cd client
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Create a `.env` file in the root of the `client` directory and add your environment variables (e.g., Google Client ID, Backend API URL).
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+## 🛠️ Tech Stack
+- **Framework:** React 19 + Vite
+- **Styling:** Tailwind CSS v4
+- **State Management:** Redux Toolkit
+- **Routing:** React Router DOM
+- **Animations:** Framer Motion
+- **Charts & Icons:** Recharts, React Icons
+
+## 📦 Build for Production
+To build the application for production, run:
+```bash
+npm run build
+```
+This will generate a `dist` folder ready to be deployed to platforms like Vercel, Netlify, or Render.
