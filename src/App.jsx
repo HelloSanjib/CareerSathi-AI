@@ -11,7 +11,7 @@ import Pricing from './pages/Pricing'
 import InterviewReport from './pages/InterviewReport'
 import { GoogleOAuthProvider } from '@react-oauth/google';
 
-export const ServerUrl = "http://localhost:8000"
+export const ServerUrl = import.meta.env.VITE_BACKEND_URL || "http://localhost:8000"
 
 export const ThemeContext = createContext();
 
