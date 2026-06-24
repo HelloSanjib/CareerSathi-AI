@@ -20,6 +20,10 @@ function Auth({ isModel = false }) {
                     { access_token: tokenResponse.access_token },
                     { withCredentials: true }
                 );
+                if (result.data?.token) {
+                    localStorage.setItem("token", result.data.token);
+                    axios.defaults.headers.common["Authorization"] = `Bearer ${result.data.token}`;
+                }
                 dispatch(setUserData(result.data));
             } catch (error) {
                 console.log("Authentication failed:", error);
