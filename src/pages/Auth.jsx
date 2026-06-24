@@ -26,7 +26,7 @@ function Auth({ isModel = false }) {
                 }
                 dispatch(setUserData(result.data));
             } catch (error) {
-                console.log("Authentication failed:", error);
+                console.error("Authentication failed:", error.response?.data?.message || error.response?.data || error.message);
                 dispatch(setUserData(null));
             }
         },
